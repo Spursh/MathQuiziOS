@@ -14,6 +14,9 @@
 		3F45721A1DEF5C3300E9559F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F4572181DEF5C3300E9559F /* LaunchScreen.storyboard */; };
 		3F4572251DEF5C3300E9559F /* MathQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4572241DEF5C3300E9559F /* MathQuizTests.swift */; };
 		3F4572301DEF5C3300E9559F /* MathQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45722F1DEF5C3300E9559F /* MathQuizUITests.swift */; };
+		3F45723E1DEF6FC700E9559F /* AdditionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45723D1DEF6FC700E9559F /* AdditionController.swift */; };
+		3F4572401DEF6FE300E9559F /* SubtractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45723F1DEF6FE300E9559F /* SubtractionController.swift */; };
+		3F4572421DEF700000E9559F /* ProductionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4572411DEF700000E9559F /* ProductionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		3F45722B1DEF5C3300E9559F /* MathQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F45722F1DEF5C3300E9559F /* MathQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathQuizUITests.swift; sourceTree = "<group>"; };
 		3F4572311DEF5C3300E9559F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F45723D1DEF6FC700E9559F /* AdditionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionController.swift; sourceTree = "<group>"; };
+		3F45723F1DEF6FE300E9559F /* SubtractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtractionController.swift; sourceTree = "<group>"; };
+		3F4572411DEF700000E9559F /* ProductionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				3F45720F1DEF5C3300E9559F /* AppDelegate.swift */,
 				3F4572111DEF5C3300E9559F /* ViewController.swift */,
 				3F4572131DEF5C3300E9559F /* Main.storyboard */,
+				3F45723D1DEF6FC700E9559F /* AdditionController.swift */,
+				3F45723F1DEF6FE300E9559F /* SubtractionController.swift */,
+				3F4572411DEF700000E9559F /* ProductionController.swift */,
 				3F4572161DEF5C3300E9559F /* Assets.xcassets */,
 				3F4572181DEF5C3300E9559F /* LaunchScreen.storyboard */,
 				3F45721B1DEF5C3300E9559F /* Info.plist */,
@@ -259,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F4572401DEF6FE300E9559F /* SubtractionController.swift in Sources */,
 				3F4572121DEF5C3300E9559F /* ViewController.swift in Sources */,
+				3F45723E1DEF6FC700E9559F /* AdditionController.swift in Sources */,
+				3F4572421DEF700000E9559F /* ProductionController.swift in Sources */,
 				3F4572101DEF5C3300E9559F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
