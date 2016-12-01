@@ -99,50 +99,86 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otg-yj-V8D">
                                 <rect key="frame" x="58" y="480" width="30" height="30"/>
                                 <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="one:" destination="kVJ-jK-gam" eventType="touchUpInside" id="D7m-tx-uwK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j82-Ec-4oG">
                                 <rect key="frame" x="180" y="480" width="30" height="30"/>
                                 <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="two:" destination="kVJ-jK-gam" eventType="touchUpInside" id="gjx-A7-p4n"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t63-Qg-hvw">
                                 <rect key="frame" x="285" y="480" width="30" height="30"/>
                                 <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="three:" destination="kVJ-jK-gam" eventType="touchUpInside" id="UOC-8Z-Gna"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOf-0K-lyL">
                                 <rect key="frame" x="58" y="518" width="30" height="30"/>
                                 <state key="normal" title="4"/>
+                                <connections>
+                                    <action selector="four:" destination="kVJ-jK-gam" eventType="touchUpInside" id="uFm-eL-JOB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1m-t9-ovB">
                                 <rect key="frame" x="180" y="518" width="30" height="30"/>
                                 <state key="normal" title="5"/>
+                                <connections>
+                                    <action selector="five:" destination="kVJ-jK-gam" eventType="touchUpInside" id="HBq-fw-Qgk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQd-DK-whU">
                                 <rect key="frame" x="285" y="518" width="30" height="30"/>
                                 <state key="normal" title="6"/>
+                                <connections>
+                                    <action selector="six:" destination="kVJ-jK-gam" eventType="touchUpInside" id="NO3-zg-Tup"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNe-4s-vhd">
                                 <rect key="frame" x="58" y="556" width="30" height="30"/>
                                 <state key="normal" title="7"/>
+                                <connections>
+                                    <action selector="seven:" destination="kVJ-jK-gam" eventType="touchUpInside" id="cvu-1m-CNY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4a7-Wk-oOa">
                                 <rect key="frame" x="180" y="556" width="30" height="30"/>
                                 <state key="normal" title="8"/>
+                                <connections>
+                                    <action selector="eight:" destination="kVJ-jK-gam" eventType="touchUpInside" id="jxg-P5-Vzr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rc7-bu-Qt9">
                                 <rect key="frame" x="285" y="556" width="30" height="30"/>
                                 <state key="normal" title="9"/>
+                                <connections>
+                                    <action selector="nine:" destination="kVJ-jK-gam" eventType="touchUpInside" id="03c-Bk-swg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ed2-P0-fvB">
                                 <rect key="frame" x="52" y="594" width="36" height="30"/>
                                 <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clear:" destination="kVJ-jK-gam" eventType="touchUpInside" id="Ima-2V-Raz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOS-SD-Q0D">
                                 <rect key="frame" x="180" y="594" width="30" height="30"/>
                                 <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="zero:" destination="kVJ-jK-gam" eventType="touchUpInside" id="Iys-mV-S8G"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6N-Bg-TbF">
                                 <rect key="frame" x="278" y="594" width="37" height="30"/>
                                 <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="enter:" destination="kVJ-jK-gam" eventType="touchUpInside" id="Ure-PS-wCm"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0z2-7g-oJf">
                                 <rect key="frame" x="139" y="406" width="97" height="30"/>
@@ -159,43 +195,45 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="q0v-nd-ef4" secondAttribute="bottom" constant="269" id="0H7-Y4-k31"/>
-                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="Otg-yj-V8D" secondAttribute="bottom" constant="157" id="1C7-re-uFL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="J1m-t9-ovB" secondAttribute="trailing" constant="149" id="1ZB-5o-MhR"/>
                             <constraint firstItem="Xsy-dg-ygR" firstAttribute="top" secondItem="4iv-Bq-B02" secondAttribute="bottom" constant="8.5" id="2IA-Vn-ohD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wQd-DK-whU" secondAttribute="trailing" constant="44" id="4GP-Rx-BpB"/>
-                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="0z2-7g-oJf" secondAttribute="bottom" constant="231" id="4Xg-0t-2aH"/>
-                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="j82-Ec-4oG" secondAttribute="bottom" constant="157" id="7s0-JI-cXf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UOf-0K-lyL" secondAttribute="trailing" constant="271" id="BrU-Bd-Uea"/>
-                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="J1m-t9-ovB" secondAttribute="bottom" constant="119" id="Ec1-CH-biR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SNe-4s-vhd" secondAttribute="trailing" constant="271" id="FOD-bJ-fFd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="j82-Ec-4oG" secondAttribute="trailing" constant="149" id="H5p-pg-KcJ"/>
-                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="Xsy-dg-ygR" secondAttribute="bottom" constant="269" id="KDM-Fk-6IS"/>
-                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="SNe-4s-vhd" secondAttribute="bottom" constant="81" id="Nml-Gm-xIh"/>
+                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="4iv-Bq-B02" secondAttribute="bottom" constant="298.5" id="JYs-xk-cTI"/>
+                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="J1m-t9-ovB" secondAttribute="bottom" constant="119" id="LI7-lL-Xka"/>
+                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="q0v-nd-ef4" secondAttribute="bottom" constant="269" id="LVd-EG-gAO"/>
+                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="TOS-SD-Q0D" secondAttribute="bottom" constant="43" id="ORw-Zm-y9K"/>
+                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="Rc7-bu-Qt9" secondAttribute="bottom" constant="81" id="RfY-R5-xQt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="q0v-nd-ef4" secondAttribute="trailing" constant="201" id="STl-0X-RL2"/>
-                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="wQd-DK-whU" secondAttribute="bottom" constant="119" id="Uyd-34-rjp"/>
-                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="t63-Qg-hvw" secondAttribute="bottom" constant="157" id="WPr-E0-zT1"/>
+                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="Otg-yj-V8D" secondAttribute="bottom" constant="157" id="Sf1-cY-s5N"/>
+                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="0z2-7g-oJf" secondAttribute="bottom" constant="231" id="Tsb-ey-aCJ"/>
+                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="wQd-DK-whU" secondAttribute="bottom" constant="119" id="U1L-iV-OAX"/>
+                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="4a7-Wk-oOa" secondAttribute="bottom" constant="81" id="Xlq-4U-RkL"/>
+                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="j82-Ec-4oG" secondAttribute="bottom" constant="157" id="Zh8-G7-Wvv"/>
+                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="C6N-Bg-TbF" secondAttribute="bottom" constant="43" id="afa-fW-ntK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Xsy-dg-ygR" secondAttribute="trailing" constant="151" id="b8H-pe-QIK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="t63-Qg-hvw" secondAttribute="trailing" constant="44" id="cHa-eQ-dNr"/>
-                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="4iv-Bq-B02" secondAttribute="bottom" constant="298.5" id="fvh-eA-89X"/>
+                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="SNe-4s-vhd" secondAttribute="bottom" constant="81" id="frx-uW-Qw4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="C6N-Bg-TbF" secondAttribute="trailing" constant="44" id="gUF-ha-blO"/>
+                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="t63-Qg-hvw" secondAttribute="bottom" constant="157" id="h9V-wP-GUy"/>
+                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="UOf-0K-lyL" secondAttribute="bottom" constant="119" id="jUI-jU-R33"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0z2-7g-oJf" secondAttribute="trailing" constant="123" id="jhd-QG-ZLL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Otg-yj-V8D" secondAttribute="trailing" constant="271" id="juT-dK-ZLT"/>
-                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="Ed2-P0-fvB" secondAttribute="bottom" constant="43" id="klN-vB-98W"/>
-                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="UOf-0K-lyL" secondAttribute="bottom" constant="119" id="lXb-V1-jaw"/>
-                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="TOS-SD-Q0D" secondAttribute="bottom" constant="43" id="nOT-jo-Gaf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4a7-Wk-oOa" secondAttribute="trailing" constant="149" id="pLU-Y9-bkW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Rc7-bu-Qt9" secondAttribute="trailing" constant="44" id="qPL-Wx-dRh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ed2-P0-fvB" secondAttribute="trailing" constant="271" id="qiZ-SU-FdE"/>
-                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="4a7-Wk-oOa" secondAttribute="bottom" constant="81" id="r5L-KZ-kOG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TOS-SD-Q0D" secondAttribute="trailing" constant="149" id="rFh-sU-3T2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4iv-Bq-B02" secondAttribute="trailing" constant="151" id="sNI-zA-fYe"/>
-                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="Rc7-bu-Qt9" secondAttribute="bottom" constant="81" id="uOj-Cw-HCW"/>
-                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="C6N-Bg-TbF" secondAttribute="bottom" constant="43" id="wBX-aq-qzW"/>
+                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="Ed2-P0-fvB" secondAttribute="bottom" constant="43" id="vVI-w8-6V9"/>
+                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="Xsy-dg-ygR" secondAttribute="bottom" constant="269" id="yj1-tJ-LgF"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="number1" destination="4iv-Bq-B02" id="2xW-07-boP"/>
+                        <outlet property="number2" destination="Xsy-dg-ygR" id="ASi-Cr-Jj5"/>
+                        <outlet property="solution" destination="0z2-7g-oJf" id="kcz-AM-USC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RnD-Zt-Y7F" userLabel="First Responder" sceneMemberID="firstResponder"/>
