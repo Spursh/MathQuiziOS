@@ -10,9 +10,12 @@ import UIKit
 
 class AdditionController: UIViewController {
 
+    @IBOutlet weak var number1: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("addition")
+        number1.text = "add"
 
         // Do any additional setup after loading the view.
     }
@@ -22,7 +25,6 @@ class AdditionController: UIViewController {
         // Dispose of any resources that can be recreated.
         print("addition1")
     }
-    
 
     /*
     // MARK: - Navigation
