@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F3051BD1DEFDD7200BB743B /* AdditionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3051BC1DEFDD7200BB743B /* AdditionController.swift */; };
+		3F3051BF1DEFDD8B00BB743B /* SubtractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3051BE1DEFDD8B00BB743B /* SubtractionController.swift */; };
+		3F3051C11DEFDDA000BB743B /* ProductionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3051C01DEFDDA000BB743B /* ProductionController.swift */; };
 		3F4572101DEF5C3300E9559F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45720F1DEF5C3300E9559F /* AppDelegate.swift */; };
 		3F4572121DEF5C3300E9559F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4572111DEF5C3300E9559F /* ViewController.swift */; };
 		3F4572151DEF5C3300E9559F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F4572131DEF5C3300E9559F /* Main.storyboard */; };
@@ -14,9 +17,6 @@
 		3F45721A1DEF5C3300E9559F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F4572181DEF5C3300E9559F /* LaunchScreen.storyboard */; };
 		3F4572251DEF5C3300E9559F /* MathQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4572241DEF5C3300E9559F /* MathQuizTests.swift */; };
 		3F4572301DEF5C3300E9559F /* MathQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45722F1DEF5C3300E9559F /* MathQuizUITests.swift */; };
-		3F45723E1DEF6FC700E9559F /* AdditionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45723D1DEF6FC700E9559F /* AdditionController.swift */; };
-		3F4572401DEF6FE300E9559F /* SubtractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45723F1DEF6FE300E9559F /* SubtractionController.swift */; };
-		3F4572421DEF700000E9559F /* ProductionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4572411DEF700000E9559F /* ProductionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F3051BC1DEFDD7200BB743B /* AdditionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionController.swift; sourceTree = "<group>"; };
+		3F3051BE1DEFDD8B00BB743B /* SubtractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtractionController.swift; sourceTree = "<group>"; };
+		3F3051C01DEFDDA000BB743B /* ProductionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductionController.swift; sourceTree = "<group>"; };
 		3F45720C1DEF5C3300E9559F /* MathQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F45720F1DEF5C3300E9559F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F4572111DEF5C3300E9559F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,9 +53,6 @@
 		3F45722B1DEF5C3300E9559F /* MathQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F45722F1DEF5C3300E9559F /* MathQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathQuizUITests.swift; sourceTree = "<group>"; };
 		3F4572311DEF5C3300E9559F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F45723D1DEF6FC700E9559F /* AdditionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionController.swift; sourceTree = "<group>"; };
-		3F45723F1DEF6FE300E9559F /* SubtractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtractionController.swift; sourceTree = "<group>"; };
-		3F4572411DEF700000E9559F /* ProductionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +83,9 @@
 		3F4572031DEF5C3200E9559F = {
 			isa = PBXGroup;
 			children = (
+				3F3051BC1DEFDD7200BB743B /* AdditionController.swift */,
+				3F3051BE1DEFDD8B00BB743B /* SubtractionController.swift */,
+				3F3051C01DEFDDA000BB743B /* ProductionController.swift */,
 				3F45720E1DEF5C3300E9559F /* MathQuiz */,
 				3F4572231DEF5C3300E9559F /* MathQuizTests */,
 				3F45722E1DEF5C3300E9559F /* MathQuizUITests */,
@@ -106,9 +109,6 @@
 				3F45720F1DEF5C3300E9559F /* AppDelegate.swift */,
 				3F4572111DEF5C3300E9559F /* ViewController.swift */,
 				3F4572131DEF5C3300E9559F /* Main.storyboard */,
-				3F45723D1DEF6FC700E9559F /* AdditionController.swift */,
-				3F45723F1DEF6FE300E9559F /* SubtractionController.swift */,
-				3F4572411DEF700000E9559F /* ProductionController.swift */,
 				3F4572161DEF5C3300E9559F /* Assets.xcassets */,
 				3F4572181DEF5C3300E9559F /* LaunchScreen.storyboard */,
 				3F45721B1DEF5C3300E9559F /* Info.plist */,
@@ -268,10 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F4572401DEF6FE300E9559F /* SubtractionController.swift in Sources */,
+				3F3051BF1DEFDD8B00BB743B /* SubtractionController.swift in Sources */,
 				3F4572121DEF5C3300E9559F /* ViewController.swift in Sources */,
-				3F45723E1DEF6FC700E9559F /* AdditionController.swift in Sources */,
-				3F4572421DEF700000E9559F /* ProductionController.swift in Sources */,
+				3F3051BD1DEFDD7200BB743B /* AdditionController.swift in Sources */,
+				3F3051C11DEFDDA000BB743B /* ProductionController.swift in Sources */,
 				3F4572101DEF5C3300E9559F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +517,7 @@
 				3F4572361DEF5C3300E9559F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F4572371DEF5C3300E9559F /* Build configuration list for PBXNativeTarget "MathQuizTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +526,7 @@
 				3F4572391DEF5C3300E9559F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F45723A1DEF5C3300E9559F /* Build configuration list for PBXNativeTarget "MathQuizUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +535,7 @@
 				3F45723C1DEF5C3300E9559F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

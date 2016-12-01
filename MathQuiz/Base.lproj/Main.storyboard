@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gcv-Ug-juB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,24 +23,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="op6-As-Ust">
-                                <rect key="frame" x="152" y="117" width="71" height="30"/>
+                                <rect key="frame" x="152" y="161" width="71" height="30"/>
                                 <state key="normal" title="ADDITION"/>
                                 <connections>
-                                    <segue destination="xAx-DC-PCF" kind="presentation" id="W42-zJ-ECQ"/>
+                                    <segue destination="kVJ-jK-gam" kind="show" id="P5b-dJ-U0I"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7E-Z4-seq">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7E-Z4-seq">
                                 <rect key="frame" x="135" y="269" width="104" height="30"/>
                                 <state key="normal" title="SUBTRACTION"/>
                                 <connections>
-                                    <segue destination="uXC-EL-Uep" kind="presentation" id="OBA-dj-bhG"/>
+                                    <segue destination="B0V-TG-5zc" kind="show" id="rQ4-Ec-kwX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kG8-eZ-f7l">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kG8-eZ-f7l">
                                 <rect key="frame" x="138" y="435" width="98" height="30"/>
                                 <state key="normal" title="PRODUCTION"/>
                                 <connections>
-                                    <segue destination="VXi-mw-k1S" kind="presentation" id="8ZO-5t-bRC"/>
+                                    <segue destination="Or5-MQ-i8V" kind="show" id="CUf-d0-exv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -66,64 +66,83 @@
                             <constraint firstAttribute="trailingMargin" secondItem="op6-As-Ust" secondAttribute="trailing" constant="136" id="wcr-hr-R1t"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="EeC-Tu-79C"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-729" y="134"/>
+            <point key="canvasLocation" x="-652" y="-388.15592203898052"/>
         </scene>
         <!--Addition Controller-->
-        <scene sceneID="Agi-3O-Hbx">
+        <scene sceneID="yhC-KY-xfq">
             <objects>
-                <viewController id="xAx-DC-PCF" customClass="AdditionController" customModule="MathQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kVJ-jK-gam" customClass="AdditionController" customModule="MathQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pLY-MG-9Jg"/>
-                        <viewControllerLayoutGuide type="bottom" id="Xzt-VD-waI"/>
+                        <viewControllerLayoutGuide type="top" id="IdO-5e-gT6"/>
+                        <viewControllerLayoutGuide type="bottom" id="edI-ev-ugY"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9Pj-iD-My2">
+                    <view key="view" contentMode="scaleToFill" id="TJs-By-dlZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c02-St-l9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RnD-Zt-Y7F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-22" y="134"/>
+            <point key="canvasLocation" x="36" y="-388.15592203898052"/>
         </scene>
         <!--Subtraction Controller-->
-        <scene sceneID="3iK-hJ-1n3">
+        <scene sceneID="Usb-ad-XQ7">
             <objects>
-                <viewController id="uXC-EL-Uep" customClass="SubtractionController" customModule="MathQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="B0V-TG-5zc" customClass="SubtractionController" customModule="MathQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="yaL-Py-hOf"/>
-                        <viewControllerLayoutGuide type="bottom" id="7SH-z1-2UO"/>
+                        <viewControllerLayoutGuide type="top" id="8cT-hZ-EdT"/>
+                        <viewControllerLayoutGuide type="bottom" id="rzj-xJ-yXk"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="eVS-Vt-TP2">
+                    <view key="view" contentMode="scaleToFill" id="hc7-5b-8rp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rJw-pE-kcs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fEo-TP-tHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="623" y="134"/>
+            <point key="canvasLocation" x="772" y="-388.15592203898052"/>
         </scene>
         <!--Production Controller-->
-        <scene sceneID="oxB-3f-udq">
+        <scene sceneID="dOv-iT-rTx">
             <objects>
-                <viewController id="VXi-mw-k1S" customClass="ProductionController" customModule="MathQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Or5-MQ-i8V" customClass="ProductionController" customModule="MathQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3ag-3A-fVd"/>
-                        <viewControllerLayoutGuide type="bottom" id="nT5-GZ-wnA"/>
+                        <viewControllerLayoutGuide type="top" id="Tr0-ko-saq"/>
+                        <viewControllerLayoutGuide type="bottom" id="7iR-kx-A3x"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zb6-sq-kAJ">
+                    <view key="view" contentMode="scaleToFill" id="6Bq-He-LIS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GLm-AK-me0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cC1-sZ-Mj9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1270" y="134"/>
+            <point key="canvasLocation" x="1536.8" y="-388.15592203898052"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="twV-YE-RNT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gcv-Ug-juB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pl6-uc-uwI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zb5-VR-V7S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cMD-0f-wAy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1591.2" y="-388.15592203898052"/>
         </scene>
     </scenes>
 </document>
