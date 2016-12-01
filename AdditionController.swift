@@ -6,11 +6,13 @@ class AdditionController: UIViewController {
     var correctAnswer = 0
     var answer = ""
     var countCorrect = 0
-    var questionNumber = 0
+    var questionNumber = 1
     
+    @IBOutlet weak var quesNum: UITextField!
     @IBOutlet weak var number1: UILabel!
     @IBOutlet weak var number2: UILabel!
     @IBOutlet weak var solution: UITextField!
+    
     @IBAction func one(_ sender: UIButton) {
         let buttonValue = "1"
         userInput = userInput + buttonValue
@@ -88,9 +90,8 @@ class AdditionController: UIViewController {
     }
     
     @IBAction func enter(_ sender: UIButton) {
+        checkQuestionNumber()
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -103,10 +104,9 @@ class AdditionController: UIViewController {
         number2.text = "\(b)"
         correctAnswer = a + b
         answer = String(correctAnswer)
+        countDownTimer()
+        quesNum.text = "Question \(questionNumber) of 10"
         
-        
-        
-
         // Do any additional setup after loading the view.
     }
 
@@ -127,6 +127,7 @@ class AdditionController: UIViewController {
     */
     
     func changeQuestion(){
+        quesNum.text = "Question \(questionNumber) of 10"
         userInput = ""
         solution.text = "\(userInput)"
         let a = Int(arc4random_uniform(10))
@@ -151,6 +152,10 @@ class AdditionController: UIViewController {
             changeQuestion()
         }
         else if (questionNumber == 10){}
+        
+    }
+    
+    func countDownTimer(){
         
     }
         
