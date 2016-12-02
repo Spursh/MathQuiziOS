@@ -192,6 +192,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ify-9x-5UK">
+                                <rect key="frame" x="285" y="347" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -199,6 +205,7 @@
                             <constraint firstItem="Xsy-dg-ygR" firstAttribute="top" secondItem="4iv-Bq-B02" secondAttribute="bottom" constant="8.5" id="2IA-Vn-ohD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wQd-DK-whU" secondAttribute="trailing" constant="44" id="4GP-Rx-BpB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UOf-0K-lyL" secondAttribute="trailing" constant="271" id="BrU-Bd-Uea"/>
+                            <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="Ify-9x-5UK" secondAttribute="bottom" constant="299" id="D2G-Hb-KXJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SNe-4s-vhd" secondAttribute="trailing" constant="271" id="FOD-bJ-fFd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="j82-Ec-4oG" secondAttribute="trailing" constant="149" id="H5p-pg-KcJ"/>
                             <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="4iv-Bq-B02" secondAttribute="bottom" constant="298.5" id="JYs-xk-cTI"/>
@@ -213,6 +220,7 @@
                             <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="4a7-Wk-oOa" secondAttribute="bottom" constant="81" id="Xlq-4U-RkL"/>
                             <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="wfk-x4-CDs" secondAttribute="bottom" constant="269" id="ZFd-aR-TkB"/>
                             <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="j82-Ec-4oG" secondAttribute="bottom" constant="157" id="Zh8-G7-Wvv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ify-9x-5UK" secondAttribute="trailing" constant="32" id="aYJ-SF-5Sd"/>
                             <constraint firstItem="edI-ev-ugY" firstAttribute="top" secondItem="C6N-Bg-TbF" secondAttribute="bottom" constant="43" id="afa-fW-ntK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Xsy-dg-ygR" secondAttribute="trailing" constant="151" id="b8H-pe-QIK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="t63-Qg-hvw" secondAttribute="trailing" constant="44" id="cHa-eQ-dNr"/>
@@ -237,6 +245,7 @@
                         <outlet property="number2" destination="Xsy-dg-ygR" id="ASi-Cr-Jj5"/>
                         <outlet property="quesNum" destination="wfk-x4-CDs" id="rLu-Nt-28c"/>
                         <outlet property="solution" destination="0z2-7g-oJf" id="kcz-AM-USC"/>
+                        <outlet property="timer" destination="Ify-9x-5UK" id="RaB-do-xUt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RnD-Zt-Y7F" userLabel="First Responder" sceneMemberID="firstResponder"/>

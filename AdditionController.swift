@@ -8,6 +8,11 @@ class AdditionController: UIViewController {
     var countCorrect = 0
     var questionNumber = 1
     
+    @IBOutlet weak var timer: UILabel!
+    var cTimer = Timer()
+    var timeLeft = Timer()
+    var counter = 5
+    
     @IBOutlet weak var quesNum: UITextField!
     @IBOutlet weak var number1: UILabel!
     @IBOutlet weak var number2: UILabel!
@@ -95,8 +100,6 @@ class AdditionController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("addition")
-        number1.text = "add"
         
         let a = Int(arc4random_uniform(10))
         let b = Int(arc4random_uniform(10))
@@ -106,8 +109,6 @@ class AdditionController: UIViewController {
         answer = String(correctAnswer)
         countDownTimer()
         quesNum.text = "Question \(questionNumber) of 10"
-        
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -115,16 +116,6 @@ class AdditionController: UIViewController {
         // Dispose of any resources that can be recreated.
         print("addition1")
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     func changeQuestion(){
         quesNum.text = "Question \(questionNumber) of 10"
@@ -136,7 +127,6 @@ class AdditionController: UIViewController {
         number2.text = "\(b)"
         correctAnswer = a + b
         answer = String(correctAnswer)
-        
     }
     
     func calculate(){
@@ -148,34 +138,29 @@ class AdditionController: UIViewController {
     
     func checkQuestionNumber() {
         if(questionNumber < 10){
+            cTimer.invalidate()
+            timeLeft.invalidate()
+            counter = 5
             questionNumber += 1
             changeQuestion()
+            countDownTimer()
         }
-        else if (questionNumber == 10){}
-        
+        else if (questionNumber == 10){
+        }
     }
     
     func countDownTimer(){
-        
+                timer.text = String(counter)
+        timeLeft = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(AdditionController.updateCounter), userInfo: nil, repeats: true)
+         cTimer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(AdditionController.checkQuestionNumber), userInfo: nil, repeats: true)
     }
-        
     
+    func updateCounter() {
+        counter = counter - 1
+        timer.text = String(counter)
+        if (counter == 0){
+            timeLeft.invalidate()
+        }
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
 }
