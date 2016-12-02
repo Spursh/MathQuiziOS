@@ -6,7 +6,7 @@ class AdditionController: UIViewController {
     var correctAnswer = 0
     var answer = ""
     var countCorrect = 0
-    var questionNumber = 0
+    var questionNumber = 1
     
     @IBOutlet weak var number1: UILabel!
     @IBOutlet weak var number2: UILabel!
@@ -104,11 +104,35 @@ class AdditionController: UIViewController {
         correctAnswer = a + b
         answer = String(correctAnswer)
         
-        
-        
+        self.navigationItem.hidesBackButton = true
+        let backButton = UIBarButtonItem(title:"Back", style: UIBarButtonItemStyle.plain,
+                                         target:self, action: #selector(AdditionController.back(sender:)))
+        self.navigationItem.leftBarButtonItem = backButton
+    
 
         // Do any additional setup after loading the view.
     }
+
+    
+    func back(sender: UIBarButtonItem) {
+        
+        let backAlert = UIAlertController(title:"Alert!",message:"Are you sure you want to exit?",
+                                          preferredStyle: UIAlertControllerStyle.alert)
+        
+        backAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(action: UIAlertAction!) in self.navigationController?.popToRootViewController(animated: true)
+        }))
+        
+        backAlert.addAction(UIAlertAction(title: "Cancle", style: .cancel, handler: { (action:
+            UIAlertAction!) in print("handle cancle logic")
+        }))
+        
+        present(backAlert,animated:true,completion: nil)
+            
+        
+    }
+    
+  
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -150,7 +174,20 @@ class AdditionController: UIViewController {
             questionNumber += 1
             changeQuestion()
         }
-        else if (questionNumber == 10){}
+        else if (questionNumber == 10){
+        
+            let backAlert = UIAlertController(title:"Total!", message:"Score = \(countCorrect)",
+                                              preferredStyle: UIAlertControllerStyle.alert)
+            
+            backAlert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: { (action:
+                UIAlertAction!) in self.navigationController?.popToRootViewController(animated: true)
+            }))
+            
+            present(backAlert,animated:true,completion: nil)
+            
+            
+        
+        }
         
     }
         
