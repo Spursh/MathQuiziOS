@@ -14,6 +14,7 @@ class AdditionController: UIViewController {
     var counter = 5
     
     @IBOutlet weak var quesNum: UITextField!
+    @IBOutlet weak var toastLabel: UILabel!
     @IBOutlet weak var number1: UILabel!
     @IBOutlet weak var number2: UILabel!
     @IBOutlet weak var solution: UITextField!
@@ -157,12 +158,41 @@ class AdditionController: UIViewController {
     func calculate(){
         if(answer == userInput){
             countCorrect += 1
+            
+            toastLabel.backgroundColor = UIColor.black
+            toastLabel.textColor = UIColor.white
+            toastLabel.textAlignment = NSTextAlignment.center;
+            self.view.addSubview(toastLabel)
+            toastLabel.text = "correct"
+            toastLabel.alpha = 1.0
+            toastLabel.layer.cornerRadius = 10;
+            toastLabel.clipsToBounds  =  true
+            UIView.animate(withDuration: 2.0, delay: 0.1, options: .curveEaseOut, animations: {
+                self.toastLabel.alpha = 0.0
+                
+            }, completion: nil)
+            
             checkQuestionNumber()
         }
     }
     
     func checkQuestionNumber() {
         if(questionNumber < 10){
+            if(answer != userInput){
+                toastLabel.backgroundColor = UIColor.black
+                toastLabel.textColor = UIColor.white
+                toastLabel.textAlignment = NSTextAlignment.center;
+                self.view.addSubview(toastLabel)
+                toastLabel.text = "wrong"
+                toastLabel.alpha = 1.0
+                toastLabel.layer.cornerRadius = 10;
+                toastLabel.clipsToBounds  =  true
+                UIView.animate(withDuration: 2.0, delay: 0.1, options: .curveEaseOut, animations: {
+                    self.toastLabel.alpha = 0.0
+                    
+                }, completion: nil)
+
+            }
             cTimer.invalidate()
             timeLeft.invalidate()
             counter = 5
@@ -185,10 +215,11 @@ class AdditionController: UIViewController {
         }
     }
     
+    
     func countDownTimer(){
                 timer.text = String(counter)
         timeLeft = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(AdditionController.updateCounter), userInfo: nil, repeats: true)
-         cTimer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(AdditionController.checkQuestionNumber), userInfo: nil, repeats: true)
+        cTimer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(AdditionController.checkQuestionNumber), userInfo: nil, repeats: true)
     }
     
     func updateCounter() {

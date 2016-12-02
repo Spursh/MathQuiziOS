@@ -198,6 +198,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zq6-GE-yLK">
+                                <rect key="frame" x="262" y="428" width="97" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -246,6 +253,7 @@
                         <outlet property="quesNum" destination="wfk-x4-CDs" id="rLu-Nt-28c"/>
                         <outlet property="solution" destination="0z2-7g-oJf" id="kcz-AM-USC"/>
                         <outlet property="timer" destination="Ify-9x-5UK" id="RaB-do-xUt"/>
+                        <outlet property="toastLabel" destination="zq6-GE-yLK" id="Z5I-bi-42A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RnD-Zt-Y7F" userLabel="First Responder" sceneMemberID="firstResponder"/>
