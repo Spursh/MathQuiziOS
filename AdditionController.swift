@@ -109,6 +109,31 @@ class AdditionController: UIViewController {
         answer = String(correctAnswer)
         countDownTimer()
         quesNum.text = "Question \(questionNumber) of 10"
+        
+        
+        self.navigationItem.hidesBackButton = true
+        let backButton = UIBarButtonItem(title:"Back", style: UIBarButtonItemStyle.plain,
+                                         target:self, action: #selector(AdditionController.back(sender:)))
+        self.navigationItem.leftBarButtonItem = backButton
+        
+        
+    }
+    
+    func back(sender: UIBarButtonItem) {
+        
+        let backAlert = UIAlertController(title:"Alert!",message:"Are you sure you want to exit?",
+                                          preferredStyle: UIAlertControllerStyle.alert)
+        
+        backAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(action: UIAlertAction!) in self.navigationController?.popToRootViewController(animated: true)
+        }))
+        
+        backAlert.addAction(UIAlertAction(title: "Cancle", style: .cancel, handler: { (action:
+            UIAlertAction!) in print("handle cancle logic")
+        }))
+        
+        present(backAlert,animated:true,completion: nil)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -146,6 +171,17 @@ class AdditionController: UIViewController {
             countDownTimer()
         }
         else if (questionNumber == 10){
+            
+            let backAlert = UIAlertController(title:"Total Score", message:"Your score is = \(countCorrect)",
+                preferredStyle: UIAlertControllerStyle.alert)
+            
+            backAlert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: { (action:
+                UIAlertAction!) in self.navigationController?.popToRootViewController(animated: true)
+            }))
+            
+            present(backAlert,animated:true,completion: nil)
+            
+            
         }
     }
     
